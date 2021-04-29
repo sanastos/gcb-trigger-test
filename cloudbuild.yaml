@@ -1,9 +1,9 @@
 steps:
-- id: 'get changes from commits 2'
+- id: 'get changes from commits 3'
   name: 'gcr.io/cloud-builders/gcloud'
   entrypoint: 'bash'
   dir: '.'
   args:
   - '-c'
   - |
-    echo "**$_COMMITS**"
+    echo "******$_COMMITS*******"
