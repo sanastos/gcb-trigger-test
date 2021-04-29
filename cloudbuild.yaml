@@ -1,5 +1,5 @@
 steps:
-- id: 'get changes from commits'
+- id: 'get changes from commits 2'
   name: 'gcr.io/cloud-builders/gcloud'
   entrypoint: 'bash'
   dir: '.'
