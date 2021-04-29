@@ -1,5 +1,9 @@
 steps:
-- name: 'gcr.io/cloud-builders/docker'
-  args: [ 'build', '-t', 'gcr.io/sanastos-test/quickstart-image', '.' ]
-images:
-- 'gcr.io/sanastos-test/quickstart-image'
+- id: 'get changes from commits'
+  name: 'gcr.io/cloud-builders/gcloud'
+  entrypoint: 'bash'
+  dir: '.'
+  args:
+  - '-c'
+  - |
+    echo "**$_COMMITS**"
