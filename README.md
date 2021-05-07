@@ -1,3 +1,3 @@
 # gcb-trigger-test
 
-trigger set up test 5
+trigger set up test 6
