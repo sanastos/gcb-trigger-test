@@ -1,9 +1,4 @@
 steps:
-- id: 'get changes from commits 3'
-  name: 'gcr.io/cloud-builders/gcloud'
-  entrypoint: 'bash'
-  dir: '.'
-  args:
-  - '-c'
-  - |
-    echo "******$_COMMITS*******"
+  - id: 'step1'
+    name: 'ubuntu'
+    args: ['echo', 'test $TRIGGER_BUILD_CONFIG_PATH']
